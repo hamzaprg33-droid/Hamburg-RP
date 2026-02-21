@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburg RP | Ticket Nutzungsbedingungen</title>
+    <title>Hamburg RP | Ticket ToS</title>
     <link rel="stylesheet" href="TicketTosStyle.css">
 </head>
 <body>
-    <div class="tos-container">
-        <header>
-            <h1>Hamburg RP</h1>
-            <h2>Ticket-Nutzungsbedingungen</h2>
-        </header>
+    <div class="tos-wrapper">
+        <div class="tos-box">
+            <header>
+                <h1>HAMBURG RP</h1>
+                <div class="divider"></div>
+                <h2>TICKET-RICHTLINIEN</h2>
+            </header>
 
-        <main id="tos-content">
-            <!-- DEIN TEXT STARTET HIER -->
-            HIER TEXT EINGEBEN
-            
-            Beispiel: Mit dem Erstellen eines Tickets akzeptierst du unsere *Serverregeln*. 
-            Jegliches *Trolling* führt zum Ausschluss.
-            <!-- DEIN TEXT ENDET HIER -->
-        </main>
+            <div id="tos-text">
+                HIER TEXT EINGEBEN
 
-        <footer>
-            <p>&copy; 2024 Hamburg RP - Viel Spaß beim Roleplay!</p>
-        </footer>
+                Beispiel: Mit dem Absenden eines *Support-Tickets* bestätigst du, dass du die *Serverregeln* gelesen hast. *Fehlverhalten* im Ticket führt zum sofortigen *Bann*.
+            </div>
+
+            <footer>
+                <p>Hamburg RP &copy; 2024</p>
+            </footer>
+        </div>
     </div>
 
     <script>
-        // Wandelt *text* automatisch in <strong>text</strong> um
-        const content = document.getElementById('tos-content');
-        content.innerHTML = content.innerHTML.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+        const container = document.getElementById('tos-text');
+        container.innerHTML = container.innerHTML.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
     </script>
 </body>
 </html>
