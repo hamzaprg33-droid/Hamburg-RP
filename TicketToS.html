@@ -6,15 +6,13 @@
     <title>Hamburg RP | Ticket ToS</title>
     <link rel="stylesheet" href="TicketTosStyle.css">
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false">
     <div class="tos-wrapper">
         <div class="tos-box">
             <header>
-                <h1>HAMBURG RP</h1>
+                <h1>TICKET TOS</h1>
                 <div class="divider"></div>
-                <h2>TICKET-RICHTLINIEN</h2>
             </header>
-
             <div id="tos-text">
                *§1 - Speichern von Daten*
                 Alles was sie an unseren Hamburg Roleplay ModMail Bot in eine Privat Nachricht senden ist für Moderatoren sichtbar.
@@ -40,13 +38,8 @@
                 Der Support soll nur bei passenden Zwecken angewendet werden (siehe §2), sollte stadessen der Support genutzt werden für Werbung in eigener Sache u./o Verkauf von Waren oder Virtuelle Währung wird es automatisch eine permanente Sperre geben.
                 Es ist erlaubt seine eigene Werbung bei einem Parter Ticket zu schreiben solange keine anstößigen Wörter vorkommen (siehe §3)
             </div>
-
-            <footer>
-                <p>Hamburg RP &copy; 2024</p>
-            </footer>
         </div>
     </div>
-
     <script>
         const container = document.getElementById('tos-text');
         container.innerHTML = container.innerHTML.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
