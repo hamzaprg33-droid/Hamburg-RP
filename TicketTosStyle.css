@@ -1,0 +1,56 @@
+body {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tos-container {
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 800px;
+    width: 90%;
+    border-top: 5px solid #e30613; /* Hamburg-Rot */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    color: #e30613;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+main {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    white-space: pre-line; /* Behält Zeilenumbrüche aus dem HTML bei */
+}
+
+strong {
+    color: #e30613; /* Highlights werden im Hamburg-Rot fett markiert */
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+}
