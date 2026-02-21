@@ -1,100 +1,94 @@
-/* Grundsetup */
+/* RESET & BASIS */
 body {
-    background-color: #121212; /* Sehr dunkles Grau, fast schwarz */
-    color: #e0e0e0; /* Hellgrau für gute Lesbarkeit */
-    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    user-select: none; /* Kopierschutz */
+    user-select: none;
     -webkit-user-select: none;
 }
 
-/* Der Button oben rechts - IMMER sichtbar */
-.navigation-container {
+/* DER KNOPF - BOMBENFEST OBEN RECHTS */
+.top-right-button {
     position: fixed;
-    top: 25px;
-    right: 25px;
-    z-index: 9999;
-}
-
-.ticket-btn {
-    background-color: #ff0000; /* Klares Hamburg-Rot */
+    top: 20px;
+    right: 20px;
+    z-index: 10000; /* Ganz oben drüber */
+    background-color: #ff0000; /* Hamburg Rot */
     color: #ffffff !important;
     text-decoration: none;
-    font-weight: bold;
     padding: 15px 25px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    border: 2px solid white;
+    font-weight: 900;
+    border: 3px solid #ffffff; /* Weißer Rahmen für Sichtbarkeit */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
-.ticket-btn:hover {
-    background-color: #cc0000;
-    transform: scale(1.05);
+.top-right-button:hover {
+    transform: scale(1.1);
+    background-color: #d10000;
 }
 
-/* Text-Container */
-.content-wrapper {
+/* CONTAINER */
+.main-container {
     display: flex;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
-.rules-card {
-    background: #222222; /* Helleres Grau für Kontrast zum Hintergrund */
-    max-width: 850px;
+.content-box {
+    background-color: #1a1a1a;
     width: 100%;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    border-left: 5px solid #ff0000;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid #333;
 }
 
-/* Header */
-.brand {
+/* HEADER */
+.logo {
     text-align: center;
-    letter-spacing: 4px;
-    color: #fff;
+    font-size: 3rem;
     margin: 0;
+    letter-spacing: 5px;
 }
 
-.accent-line {
-    height: 4px;
+.red-bar {
+    height: 5px;
     background: #ff0000;
-    width: 100px;
-    margin: 15px auto;
+    width: 150px;
+    margin: 20px auto;
 }
 
-.section-title {
+.sub-title {
     text-align: center;
-    font-size: 1rem;
     color: #ff0000;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
 }
 
-/* Text-Formatierung */
-#text-engine {
+/* DER TEXT MIT LÜCKEN */
+#tos-content {
     line-height: 1.8;
     font-size: 1.1rem;
-    white-space: pre-line; /* Zeilenumbrüche beachten */
+    white-space: pre-wrap; /* BEHÄLT ALLE ABSÄTZE UND LÜCKEN BEI! */
+    color: #e0e0e0;
 }
 
 strong {
-    color: #ffffff; /* Fette Texte sind reinweiß */
-    font-weight: 800;
-    background: rgba(255,0,0,0.1); /* Leichter roter Schimmer hinter fettem Text */
-    padding: 0 4px;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 footer {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #666;
-    border-top: 1px solid #333;
+    margin-top: 60px;
     padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #555;
 }
