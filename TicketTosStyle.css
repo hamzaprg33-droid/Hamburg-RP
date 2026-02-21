@@ -1,89 +1,100 @@
+/* Grundsetup */
 body {
-    background-color: #0d0d0d;
-    color: #ccc;
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212; /* Sehr dunkles Grau, fast schwarz */
+    color: #e0e0e0; /* Hellgrau für gute Lesbarkeit */
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    user-select: none; /* Verhindert das Markieren von Text */
+    padding: 0;
+    user-select: none; /* Kopierschutz */
     -webkit-user-select: none;
 }
 
-/* Navigations-Leiste oben rechts */
-.top-nav {
+/* Der Button oben rechts - IMMER sichtbar */
+.navigation-container {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 100;
+    top: 25px;
+    right: 25px;
+    z-index: 9999;
 }
 
-.nav-button {
-    background-color: #cc0000;
-    color: white;
+.ticket-btn {
+    background-color: #ff0000; /* Klares Hamburg-Rot */
+    color: #ffffff !important;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     font-weight: bold;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(204, 0, 0, 0.3);
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
 }
 
-.nav-button:hover {
-    background-color: #ff0000;
-    transform: translateY(-2px);
+.ticket-btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
 }
 
-.tos-wrapper {
+/* Text-Container */
+.content-wrapper {
     display: flex;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
-.tos-box {
-    background: #161616;
-    max-width: 900px;
+.rules-card {
+    background: #222222; /* Helleres Grau für Kontrast zum Hintergrund */
+    max-width: 850px;
     width: 100%;
     padding: 40px;
-    border-radius: 8px;
-    border-right: 4px solid #cc0000;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    border-left: 5px solid #ff0000;
 }
 
-header h1 {
-    color: #fff;
+/* Header */
+.brand {
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    color: #fff;
     margin: 0;
 }
 
-.divider {
-    height: 3px;
-    background: #cc0000;
-    width: 80px;
-    margin: 20px auto;
+.accent-line {
+    height: 4px;
+    background: #ff0000;
+    width: 100px;
+    margin: 15px auto;
 }
 
-header h2 {
+.section-title {
     text-align: center;
-    color: #cc0000;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #ff0000;
     margin-bottom: 40px;
 }
 
-#tos-text {
-    line-height: 1.7;
-    white-space: pre-line;
+/* Text-Formatierung */
+#text-engine {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    white-space: pre-line; /* Zeilenumbrüche beachten */
 }
 
 strong {
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+    color: #ffffff; /* Fette Texte sind reinweiß */
+    font-weight: 800;
+    background: rgba(255,0,0,0.1); /* Leichter roter Schimmer hinter fettem Text */
+    padding: 0 4px;
 }
 
 footer {
     margin-top: 50px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
     text-align: center;
     font-size: 0.8rem;
-    color: #555;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 20px;
 }
